@@ -17,9 +17,13 @@ fn main() {
 
     let eye = if options.dead { "x" } else { "o" };
 
+    if message.to_lowercase() == "woof" {
+        eprintln!("A cat shouldn't bark like a dog.")
+    }
+
     println!("{}", message);
-    println!(" \\");
-    println!("  \\");
+    println!("    \\");
+    println!("     \\");
     println!("      /\\_/\\");
     println!("     ( {eye}  {eye} )");
     println!("      =( I )=");
